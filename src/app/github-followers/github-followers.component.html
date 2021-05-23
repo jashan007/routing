@@ -1,0 +1,7 @@
+<div>
+  <ul *ngFor="let follower of followers">
+    <a [routerLink]="['/followers', follower.id, follower.name]">{{
+      follower.name
+    }}</a>
+  </ul>
+</div>
